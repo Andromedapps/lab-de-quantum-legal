@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Política de Privacidad de AquaMind | Lab de Quantum</title>
+
+  <meta
+    name="description"
+    content="Política de Privacidad de AquaMind. Conoce cómo recopilamos, utilizamos, almacenamos y protegemos tu información."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #e9eaf2;
+      background:
+        radial-gradient(circle at top left, rgba(100, 87, 255, 0.18), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(0, 209, 255, 0.1), transparent 30%),
+        #080912;
+      line-height: 1.75;
+    }
+
+    a {
+      color: #8fdfff;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(8, 9, 18, 0.85);
+      backdrop-filter: blur(18px);
+    }
+
+    .header-content {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: #ffffff;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .brand-symbol {
+      width: 34px;
+      height: 34px;
+      border-radius: 11px;
+      background: linear-gradient(135deg, #7067ff, #00d1ff);
+      box-shadow: 0 0 25px rgba(79, 135, 255, 0.35);
+    }
+
+    .language-switcher {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .language-switcher a,
+    .language-switcher span {
+      padding: 7px 11px;
+      border-radius: 8px;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .language-switcher span {
+      color: #ffffff;
+      background: rgba(112, 103, 255, 0.35);
+    }
+
+    .language-switcher a {
+      color: #a9abbb;
+    }
+
+    .language-switcher a:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .hero {
+      width: 100%;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 90px 24px 60px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 8px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      border-radius: 999px;
+      color: #bfc4ff;
+      background: rgba(255, 255, 255, 0.05);
+      font-size: 14px;
+    }
+
+    h1 {
+      margin-bottom: 22px;
+      font-size: clamp(42px, 7vw, 70px);
+      line-height: 1.05;
+      letter-spacing: -3px;
+      background: linear-gradient(90deg, #ffffff, #aaa4ff, #6fe8ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-description {
+      max-width: 700px;
+      margin: 0 auto 24px;
+      color: #a6a8b7;
+      font-size: 18px;
+    }
+
+    .updated {
+      color: #777a8b;
+      font-size: 14px;
+    }
+
+    .layout {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px 100px;
+      display: grid;
+      grid-template-columns: 250px minmax(0, 1fr);
+      gap: 34px;
+      align-items: start;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 98px;
+      padding: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 22px;
+      background: rgba(17, 19, 35, 0.65);
+      backdrop-filter: blur(14px);
+    }
+
+    .sidebar-title {
+      margin-bottom: 15px;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .sidebar nav {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .sidebar nav a {
+      padding: 8px 10px;
+      border-radius: 9px;
+      color: #999cad;
+      font-size: 14px;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    .sidebar nav a:hover {
+      color: #ffffff;
+      background: rgba(112, 103, 255, 0.13);
+    }
+
+    .document {
+      padding: 42px;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 26px;
+      background: rgba(17, 19, 35, 0.72);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(18px);
+    }
+
+    .document section {
+      scroll-margin-top: 115px;
+    }
+
+    .document section + section {
+      margin-top: 52px;
+      padding-top: 48px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .document h2 {
+      margin-bottom: 20px;
+      color: #ffffff;
+      font-size: 28px;
+      line-height: 1.25;
+      letter-spacing: -0.6px;
+    }
+
+    .document h3 {
+      margin: 30px 0 12px;
+      color: #d7d9e8;
+      font-size: 19px;
+    }
+
+    .document p {
+      margin-bottom: 17px;
+      color: #b3b5c3;
+    }
+
+    .document ul,
+    .document ol {
+      margin: 12px 0 20px 24px;
+      color: #b3b5c3;
+    }
+
+    .document li {
+      margin-bottom: 12px;
+      padding-left: 5px;
+    }
+
+    .document strong {
+      color: #f2f3f8;
+    }
+
+    .notice {
+      margin-bottom: 35px;
+      padding: 22px;
+      border: 1px solid rgba(112, 103, 255, 0.3);
+      border-radius: 17px;
+      background: rgba(112, 103, 255, 0.09);
+      color: #c7c9d7;
+    }
+
+    .contact-card {
+      margin-top: 20px;
+      padding: 24px;
+      border-radius: 18px;
+      background: linear-gradient(
+        135deg,
+        rgba(112, 103, 255, 0.13),
+        rgba(0, 209, 255, 0.07)
+      );
+      border: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+    .contact-card p {
+      margin: 0;
+    }
+
+    footer {
+      padding: 35px 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      color: #777a8b;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    footer a {
+      margin-left: 8px;
+      color: #aaaebe;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+    }
+
+    @media (max-width: 850px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .sidebar nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .document {
+        padding: 30px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .header-content {
+        padding: 14px 16px;
+      }
+
+      .brand span {
+        display: none;
+      }
+
+      .hero {
+        padding: 65px 20px 45px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .layout {
+        padding: 0 15px 70px;
+      }
+
+      .sidebar {
+        padding: 19px;
+      }
+
+      .sidebar nav {
+        grid-template-columns: 1fr;
+      }
+
+      .document {
+        padding: 24px 20px;
+        border-radius: 20px;
+      }
+
+      .document h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-content">
+      <a class="brand" href="../../">
+        <div class="brand-symbol"></div>
+        <span>Lab de Quantum</span>
+      </a>
+
+      <div class="language-switcher">
+        <span>Español</span>
+        <a href="../en/">English</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <span class="eyebrow">AquaMind · Centro Legal</span>
+
+      <h1>Política de Privacidad</h1>
+
+      <p class="hero-description">
+        Conoce cómo AquaMind recopila, utiliza, almacena y protege
+        la información de sus usuarios.
+      </p>
+
+      <p class="updated">
+        Última actualización: 25 de junio de 2026
+      </p>
+    </section>
+
+    <div class="layout">
+
+      <aside class="sidebar">
+        <p class="sidebar-title">Contenido</p>
+
+        <nav>
+          <a href="#introduccion">Introducción</a>
+          <a href="#informacion">1. Información recopilada</a>
+          <a href="#uso">2. Uso de la información</a>
+          <a href="#seguridad">3. Almacenamiento y seguridad</a>
+          <a href="#eliminacion">4. Eliminación de datos</a>
+          <a href="#menores">5. Menores de edad</a>
+          <a href="#enlaces">6. Enlaces legales</a>
+          <a href="#cambios">7. Cambios en la política</a>
+          <a href="#contacto">8. Contacto</a>
+        </nav>
+      </aside>
+
+      <article class="document">
+
+        <section id="introduccion">
+          <div class="notice">
+            Al utilizar AquaMind, aceptas las prácticas descritas en esta
+            Política de Privacidad.
+          </div>
+
+          <p>
+            En AquaMind, en adelante denominada como
+            <strong>“la Aplicación”</strong> o <strong>“nosotros”</strong>,
+            nos tomamos muy en serio la privacidad de nuestros usuarios y
+            la seguridad de sus datos.
+          </p>
+
+          <p>
+            Esta Política de Privacidad describe cómo recopilamos,
+            utilizamos, almacenamos y protegemos la información cuando
+            utilizas nuestra aplicación móvil disponible en la App Store
+            de Apple.
+          </p>
+        </section>
+
+        <section id="informacion">
+          <h2>1. Información que recopilamos</h2>
+
+          <p>
+            AquaMind recopila información para ofrecer un servicio de
+            sincronización en la nube, seguimiento biológico de acuarios
+            y gestión de recordatorios.
+          </p>
+
+          <h3>A. Información de registro y autenticación — opcional</h3>
+
+          <p>
+            Si decides utilizar las funciones de sincronización en la nube
+            e inicio de sesión, podremos recopilar:
+          </p>
+
+          <ul>
+            <li>
+              <strong>Credenciales de terceros:</strong>
+              dirección de correo electrónico, nombre para mostrar e
+              identificador único de usuario proporcionados de forma segura
+              mediante Sign in with Apple o Google Sign-In.
+            </li>
+
+            <li>
+              <strong>Identificador de cuenta:</strong>
+              un identificador interno generado por nuestro servicio de
+              autenticación, Firebase Authentication.
+            </li>
+          </ul>
+
+          <h3>B. Datos de acuarios y biología</h3>
+
+          <p>
+            Para proporcionar las funcionalidades básicas de la Aplicación,
+            almacenamos los datos que introduces voluntariamente:
+          </p>
+
+          <ul>
+            <li>
+              <strong>Perfiles de acuarios:</strong>
+              nombre, volumen en litros o galones, tipo de agua dulce o
+              salada y fecha de creación.
+            </li>
+
+            <li>
+              <strong>Catálogo de peces:</strong>
+              nombres de las especies presentes en tu acuario, incluyendo
+              perfiles exóticos personalizados y notas biológicas.
+            </li>
+
+            <li>
+              <strong>Parámetros del agua:</strong>
+              mediciones históricas de temperatura, pH, nitratos y amonio.
+            </li>
+
+            <li>
+              <strong>Recordatorios de cuidado:</strong>
+              tareas de alimentación, cambios de agua y análisis de
+              parámetros.
+            </li>
+
+            <li>
+              <strong>Fotos de evolución:</strong>
+              imágenes que tomas e integras para llevar un registro visual
+              de tu ecosistema.
+            </li>
+          </ul>
+
+          <h3>C. Suscripciones y pagos</h3>
+
+          <ul>
+            <li>
+              AquaMind ofrece un modelo de suscripción Premium mediante
+              compras dentro de la aplicación, procesadas de forma nativa
+              mediante StoreKit de Apple.
+            </li>
+
+            <li>
+              Nosotros no recopilamos ni almacenamos datos de pago,
+              números de tarjetas de crédito ni información de facturación.
+            </li>
+
+            <li>
+              Toda la facturación y el procesamiento de pagos se realizan
+              exclusivamente mediante la cuenta de Apple App Store del
+              usuario, bajo los términos y políticas de Apple.
+            </li>
+          </ul>
+        </section>
+
+        <section id="uso">
+          <h2>2. Cómo utilizamos la información</h2>
+
+          <p>
+            Utilizamos tus datos únicamente para los siguientes fines:
+          </p>
+
+          <ul>
+            <li>
+              <strong>Proporcionar las funcionalidades de la Aplicación:</strong>
+              calcular rangos seguros de parámetros, generar alertas de
+              compatibilidad de especies y sugerir rutinas de cuidado.
+            </li>
+
+            <li>
+              <strong>Sincronización entre dispositivos:</strong>
+              respaldar tus acuarios y sincronizar tu información en tiempo
+              real mediante Cloud Firestore, para que puedas acceder a ella
+              desde cualquier dispositivo compatible en el que inicies
+              sesión.
+            </li>
+
+            <li>
+              <strong>Mejora del servicio:</strong>
+              analizar errores internos y telemetría de rendimiento de
+              manera anónima.
+            </li>
+          </ul>
+
+          <p>
+            Nunca venderemos, alquilaremos ni compartiremos tus datos
+            personales con anunciantes o terceros ajenos al funcionamiento
+            técnico del servicio.
+          </p>
+        </section>
+
+        <section id="seguridad">
+          <h2>3. Almacenamiento y seguridad de los datos</h2>
+
+          <ul>
+            <li>
+              <strong>Almacenamiento local:</strong>
+              los datos de tus acuarios se guardan localmente en tu
+              dispositivo mediante la tecnología SwiftData de Apple.
+            </li>
+
+            <li>
+              <strong>Almacenamiento en la nube:</strong>
+              si inicias sesión, tus datos se transmiten de forma cifrada
+              y se almacenan en la infraestructura de Google Cloud y
+              Firebase Firestore.
+            </li>
+
+            <li>
+              <strong>Medidas de seguridad:</strong>
+              aplicamos protocolos de seguridad estándar en la industria
+              para proteger la transferencia y el almacenamiento de los
+              datos, incluyendo cifrado en tránsito mediante SSL/TLS y
+              cifrado en reposo.
+            </li>
+          </ul>
+        </section>
+
+        <section id="eliminacion">
+          <h2>4. Control del usuario y eliminación de datos</h2>
+
+          <p>
+            De acuerdo con las directrices de revisión de la App Store de
+            Apple, garantizamos tu derecho a eliminar tu información.
+          </p>
+
+          <ul>
+            <li>
+              <strong>Eliminación dentro de la Aplicación:</strong>
+              puedes eliminar de forma definitiva tu cuenta y toda la
+              información asociada en cualquier momento desde la pantalla
+              de Ajustes:
+              <strong>Ajustes → Eliminar cuenta</strong>.
+            </li>
+          </ul>
+
+          <h3>Efectos de la eliminación</h3>
+
+          <p>
+            Al presionar “Eliminar cuenta” y confirmar la acción:
+          </p>
+
+          <ol>
+            <li>
+              Se eliminarán de forma inmediata y definitiva todos tus
+              registros de acuarios, peces, bitácoras y fotografías de los
+              servidores en la nube.
+            </li>
+
+            <li>
+              Se eliminará tu perfil de usuario de nuestro sistema de
+              autenticación, Firebase Authentication.
+            </li>
+
+            <li>
+              No conservaremos copias de seguridad de tus datos biológicos
+              después de que hayan sido eliminados.
+            </li>
+          </ol>
+        </section>
+
+        <section id="menores">
+          <h2>5. Menores de edad</h2>
+
+          <p>
+            La Aplicación no está dirigida a menores de 13 años. No
+            recopilamos de manera consciente información personal de niños
+            menores de 13 años.
+          </p>
+
+          <p>
+            Si descubrimos que un menor de 13 años nos ha proporcionado
+            información personal, la eliminaremos inmediatamente de
+            nuestros servidores.
+          </p>
+        </section>
+
+        <section id="enlaces">
+          <h2>6. Enlaces legales adicionales</h2>
+
+          <p>
+            El uso de las suscripciones dentro de la Aplicación se rige
+            por los términos y condiciones estándar de Apple.
+          </p>
+
+          <p>
+            <a
+              href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consultar los Términos de Uso estándar de Apple — EULA
+            </a>
+          </p>
+        </section>
+
+        <section id="cambios">
+          <h2>7. Cambios en esta Política de Privacidad</h2>
+
+          <p>
+            Nos reservamos el derecho de actualizar esta Política de
+            Privacidad en cualquier momento.
+          </p>
+
+          <p>
+            Notificaremos cualquier modificación publicando la nueva
+            Política de Privacidad en esta página y actualizando la fecha
+            de “Última actualización”.
+          </p>
+        </section>
+
+        <section id="contacto">
+          <h2>8. Contacto</h2>
+
+          <p>
+            Si tienes alguna pregunta o sugerencia sobre esta Política de
+            Privacidad, puedes ponerte en contacto con nosotros.
+          </p>
+
+          <div class="contact-card">
+            <p>
+              <strong>Correo electrónico:</strong><br>
+
+              <a href="mailto:andromedapps.soporte@outlook.com">
+                andromedapps.soporte@outlook.com
+              </a>
+            </p>
+          </div>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Lab de Quantum · AquaMind
+    <a href="../../">Volver al Centro Legal</a>
+  </footer>
+
+</body>
+</html>
