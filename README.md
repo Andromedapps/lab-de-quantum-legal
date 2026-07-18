@@ -1,2 +1,2 @@
-# lab-de-quantum-legal
-Centro legal y términos y condiciones de Lab de Quantum
+# AquaKay-legal
+Centro legal y términos y condiciones de AquaKay
